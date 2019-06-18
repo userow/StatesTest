@@ -64,7 +64,7 @@ class TestService {
         print(statesDictionary)
         
         self.statesDictionary = statesDictionary
-        self.statesDictionaryKeys = Array(statesDictionary.keys)
+        self.statesDictionaryKeys = Array(statesDictionary.keys.sorted())
         
         self.delegate?.dataReceived()
     }
